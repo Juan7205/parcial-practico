@@ -32,7 +32,7 @@ public class Main {
         sc.nextLine();
 
         Libro libro2 = new Libro();
-        libro2.setTitutlo(titulo);
+        libro2.setTitulo(titulo);
         libro2.setAutor(autor);
         libro2.setEjemplares(ejemplares);
         libro2.setEjemplaresPrestados(prestados);

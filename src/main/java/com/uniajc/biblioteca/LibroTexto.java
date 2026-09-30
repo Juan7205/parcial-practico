@@ -23,11 +23,11 @@ public class LibroTexto extends Libro {
         this.curso = curso;
     }
 
-    public String getcurso() {
+    public String getCurso() {
         return curso;
     }
 
-    public void setcurso(String curso) {
+    public void setCurso(String curso) {
         this.curso = curso;
     }
 

@@ -24,11 +24,11 @@ public class LibroTextoUNIAC extends LibroTexto {
         this.facultad = facultad;
     }
 
-    public String getfacultad() {
+    public String getFacultad() {
         return facultad;
     }
 
-    public void setfacultad(String facultad) {
+    public void setFacultad(String facultad) {
         this.facultad = facultad;
     }
 

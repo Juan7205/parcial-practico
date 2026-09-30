@@ -31,11 +31,11 @@ public class Novela extends Libro {
         this.tipo = tipo;
     }
 
-    public String gettipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void settipo(String tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 

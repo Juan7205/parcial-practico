@@ -67,7 +67,7 @@ código ejecutable. Representan restricciones del lenguaje Java:
        }
    }
    ```
-   Debe utilizarse `getTitutlo()` o definir un método protegido cuando exista
+   Debe utilizarse `getTitulo()` o definir un método protegido cuando exista
    una razón para habilitar ese acceso.
 3. **Extender una clase `final`:** una clase declarada `final` no admite
    subclases.
@@ -80,3 +80,24 @@ código ejecutable. Representan restricciones del lenguaje Java:
    de una superclase no puede llamar a `super()` para construir su subclase. La
    llamada a `super(...)` pertenece al constructor de la subclase y debe ser su
    primera instrucción.
+
+## Nuevos atributos y método adicional
+
+Dos atributos que se podrían agregar con sentido al ejercicio:
+
+- **`fechaPublicacion` (LocalDate)**: fecha de publicación del libro; permite
+  ordenar y filtrar el inventario por año.
+- **`genero` (String)**: género literario (ficción, no ficción, etc.);
+  facilita búsquedas más precisas que el `tipo` de `Novela`.
+
+Un método adicional que encaja con la lógica del sistema:
+
+```java
+public boolean estaDisponible() {
+    return ejemplaresDisponibles() > 0;
+}
+```
+
+Devuelve `true` si al menos un ejemplar está disponible para préstamo, de modo
+que los clientes sólo necesiten preguntar la disponibilidad sin conocer los
+contadores internos.

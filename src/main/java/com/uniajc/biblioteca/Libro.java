@@ -33,11 +33,11 @@ public class Libro {
 
     
 
-    public String getTitutlo() {
+    public String getTitulo() {
         return titulo;
     }
 
-    public void setTitutlo(String titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
@@ -134,7 +134,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{titutlo='" + titulo + "', autor='" + autor
+        return "Libro{titulo='" + titulo + "', autor='" + autor
                 + "', ejemplares=" + ejemplares
                 + ", ejemplaresPrestados=" + ejemplaresPrestados
                 + ", isbn='" + isbn + "'}";
